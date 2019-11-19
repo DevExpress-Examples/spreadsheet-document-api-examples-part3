@@ -75,7 +75,7 @@ namespace Spreadsheet_Document_Api_Part_3
             workbook.BeginUpdate();
             codeEditor.BeforeCompile();
             workbook.Options.Culture = defaultCulture;
-            bool loaded = workbook.LoadDocument("Document.xlsx");
+            bool loaded = workbook.LoadDocument("Documents\\Document.xlsx");
             Debug.Assert(loaded);
         }
         ExampleLanguage CurrentExampleLanguage

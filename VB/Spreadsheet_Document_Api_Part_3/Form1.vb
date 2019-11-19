@@ -70,7 +70,7 @@ Namespace Spreadsheet_Document_Api_Part_3
 			workbook.BeginUpdate()
 			codeEditor.BeforeCompile()
 			workbook.Options.Culture = defaultCulture
-			Dim loaded As Boolean = workbook.LoadDocument("Document.xlsx")
+			Dim loaded As Boolean = workbook.LoadDocument("Documents\\Document.xlsx")
 			Debug.Assert(loaded)
 		End Sub
 		Private Property CurrentExampleLanguage() As ExampleLanguage
