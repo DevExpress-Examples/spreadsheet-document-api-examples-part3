@@ -115,7 +115,6 @@
             // 
             this.richEditControlCS.ActiveViewType = DevExpress.XtraRichEdit.RichEditViewType.Draft;
             this.richEditControlCS.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.richEditControlCS.DocumentViewDirection = DevExpress.XtraRichEdit.DocumentViewDirection.LeftToRight;
             this.richEditControlCS.LayoutUnit = DevExpress.XtraRichEdit.DocumentLayoutUnit.Pixel;
             this.richEditControlCS.Location = new System.Drawing.Point(0, 0);
             this.richEditControlCS.Margin = new System.Windows.Forms.Padding(6);
@@ -139,7 +138,6 @@
             // 
             this.richEditControlVB.ActiveViewType = DevExpress.XtraRichEdit.RichEditViewType.Draft;
             this.richEditControlVB.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.richEditControlVB.DocumentViewDirection = DevExpress.XtraRichEdit.DocumentViewDirection.LeftToRight;
             this.richEditControlVB.LayoutUnit = DevExpress.XtraRichEdit.DocumentLayoutUnit.Pixel;
             this.richEditControlVB.Location = new System.Drawing.Point(0, 0);
             this.richEditControlVB.Margin = new System.Windows.Forms.Padding(6);

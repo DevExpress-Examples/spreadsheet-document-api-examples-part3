@@ -38,6 +38,7 @@ namespace Spreadsheet_Document_Api_Part_3
       "using System.Diagnostics;\r\n" +
       "using System.Xml;\r\n" +
       "using System.Data;\r\n" +
+      "using System.Linq;\r\n" +
       "using System.Collections.Generic;\r\n" +
       "using System.Globalization;\r\n" +
       "using Formatting = DevExpress.Spreadsheet.Formatting;\r\n" +

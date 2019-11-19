@@ -27,7 +27,7 @@ Namespace Spreadsheet_Document_Api_Part_3
 			CompilerParams.TreatWarningsAsErrors = False
 			CompilerParams.GenerateExecutable = False
 
-			Dim referencesSystem() As String = { "System.dll", "System.Windows.Forms.dll", "System.Data.dll", "System.Xml.dll", "System.Drawing.dll" }
+			Dim referencesSystem() As String = { "System.dll", "System.Windows.Forms.dll", "System.Data.dll", "System.Xml.dll", "System.Core.dll", "System.Drawing.dll" }
 
 			Dim referencesDX() As String = { AssemblyInfo.SRAssemblyData, GetModuleAssembly(), AssemblyInfo.SRAssemblyOfficeCore, AssemblyInfo.SRAssemblyPrintingCore, AssemblyInfo.SRAssemblyPrinting, AssemblyInfo.SRAssemblyDocs, AssemblyInfo.SRAssemblyUtils }
 			Dim references((referencesSystem.Length + referencesDX.Length) - 1) As String

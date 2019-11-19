@@ -35,6 +35,7 @@ namespace Spreadsheet_Document_Api_Part_3
                                                       "System.Windows.Forms.dll",
                                                       "System.Data.dll",
                                                       "System.Xml.dll",
+                                                      "System.Core.dll",
                                                       "System.Drawing.dll" };
 
             string[] referencesDX = new string[] {
