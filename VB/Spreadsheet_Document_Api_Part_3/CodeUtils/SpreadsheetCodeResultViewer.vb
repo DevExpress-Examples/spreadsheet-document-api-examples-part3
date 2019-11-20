@@ -9,11 +9,11 @@ Namespace Spreadsheet_Document_Api_Part_3
 			Return AssemblyInfo.SRAssemblySpreadsheetCore
 		End Function
 		Protected Overrides Function GetExampleClassName() As String
-			Return "SpreadsheetCodeResultViewer.ExampleItem"
-		End Function
+            Return "SpreadsheetCodeResultViewer.ExampleItem"
+        End Function
 	End Class
-	#Region "SpreadsheetCSExampleCodeEvaluator"
-	Partial Public Class SpreadsheetCSExampleCodeEvaluator
+    '#Region "#SpreadsheetCSExampleCodeEvaluator"
+    Partial Public Class SpreadsheetCSExampleCodeEvaluator
 		Inherits SpreadsheetExampleCodeEvaluator
 
 		Protected Overrides Function GetCodeDomProvider() As CodeDomProvider
@@ -36,9 +36,9 @@ Namespace Spreadsheet_Document_Api_Part_3
 			End Get
 		End Property
 	End Class
-	#End Region
-	#Region "SpreadsheetVbExampleCodeEvaluator"
-	Partial Public Class SpreadsheetVbExampleCodeEvaluator
+    ' #End Region '#SpreadsheetCSExampleCodeEvaluator
+    ' #Region "#SpreadsheetVbExampleCodeEvaluator"
+    Partial Public Class SpreadsheetVbExampleCodeEvaluator
 		Inherits SpreadsheetExampleCodeEvaluator
 
 		Protected Overrides Function GetCodeDomProvider() As CodeDomProvider
@@ -61,5 +61,5 @@ Namespace Spreadsheet_Document_Api_Part_3
 			End Get
 		End Property
 	End Class
-	#End Region
+    ' #End Region '#SpreadsheetVbExampleCodeEvaluator
 End Namespace
