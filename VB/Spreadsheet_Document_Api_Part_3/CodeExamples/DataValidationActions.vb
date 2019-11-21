@@ -165,6 +165,21 @@ Namespace SpreadsheetControl_API_Part03
 '			#End Region ' #GetDataValidation
 		End Sub
 
+		Private Shared Sub ValidateCellValue(ByVal workbook As IWorkbook)
+'			#Region "#ValidateCellValue"
+			workbook.LoadDocument("Documents\DataValidation.xlsx")
+			Dim worksheet As Worksheet = workbook.Worksheets(0)
+
+			' Add data validations.
+			worksheet.DataValidations.Add(worksheet("D4:D11"), DataValidationType.TextLength, DataValidationOperator.Equal, 3)
+			'Check whether the cell value meets the validation criteria:
+			Dim isValid As Boolean = worksheet.DataValidations.Validate(worksheet.Cells("D4"), worksheet.Cells("J4").Value)
+			If isValid Then
+				worksheet("D4").CopyFrom(worksheet("J4"))
+			End If
+'			#End Region ' #ValidateCellValue
+		End Sub
+
 		Private Shared Sub RemoveDataValidation(ByVal workbook As IWorkbook)
 '			#Region "#RemoveDataValidation"
 			workbook.LoadDocument("Documents\DataValidation.xlsx")
