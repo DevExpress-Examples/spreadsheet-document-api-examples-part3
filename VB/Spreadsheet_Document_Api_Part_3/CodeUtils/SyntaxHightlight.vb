@@ -1,4 +1,4 @@
-﻿Imports DevExpress.CodeParser
+Imports DevExpress.CodeParser
 Imports DevExpress.Office.Internal
 Imports DevExpress.Office.Utils
 Imports DevExpress.Utils

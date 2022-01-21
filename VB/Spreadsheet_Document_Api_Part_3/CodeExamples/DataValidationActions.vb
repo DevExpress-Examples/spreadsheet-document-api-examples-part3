@@ -1,4 +1,4 @@
-﻿Imports System
+Imports System
 Imports DevExpress.Spreadsheet
 Imports System.Drawing
 Imports System.Linq

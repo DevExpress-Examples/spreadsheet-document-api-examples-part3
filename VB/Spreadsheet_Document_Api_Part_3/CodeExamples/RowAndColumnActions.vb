@@ -1,4 +1,4 @@
-﻿Imports System
+Imports System
 Imports DevExpress.Spreadsheet
 
 Namespace SpreadsheetControl_API_Part03

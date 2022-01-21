@@ -1,4 +1,4 @@
-﻿Imports System
+Imports System
 Imports System.CodeDom.Compiler
 Imports System.Collections.Generic
 Imports System.IO

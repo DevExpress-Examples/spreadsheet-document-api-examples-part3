@@ -1,4 +1,4 @@
-﻿Namespace Spreadsheet_Document_Api_Part_3
+Namespace Spreadsheet_Document_Api_Part_3
 	Partial Public Class Form1
 		''' <summary>
 		''' Required designer variable.
@@ -246,4 +246,3 @@
 #End Region
     End Class
 End Namespace
-

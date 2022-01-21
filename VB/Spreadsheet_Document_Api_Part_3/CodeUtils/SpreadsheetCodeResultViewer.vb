@@ -1,4 +1,4 @@
-﻿Imports Microsoft.CSharp
+Imports Microsoft.CSharp
 Imports System.CodeDom.Compiler
 
 Namespace Spreadsheet_Document_Api_Part_3

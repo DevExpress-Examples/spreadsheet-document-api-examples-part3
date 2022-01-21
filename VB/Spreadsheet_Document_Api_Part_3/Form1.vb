@@ -1,4 +1,4 @@
-﻿Imports DevExpress.Spreadsheet
+Imports DevExpress.Spreadsheet
 Imports DevExpress.XtraTab
 Imports DevExpress.XtraTreeList
 Imports DevExpress.XtraTreeList.Columns
