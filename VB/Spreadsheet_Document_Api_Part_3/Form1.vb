@@ -145,7 +145,7 @@ Namespace Spreadsheet_Document_Api_Part_3
 			End If
 
 			Dim exampleCode As String = codeEditor.ShowExample(oldExample, newExample)
-			codeExampleNameLbl.Text = CodeExampleDemoUtils.ConvertStringToMoreHumanReadableForm(newExample.RegionName) & " example"
+			codeExampleNameLbl.Text = CodeExampleDemoUtils.ConvertStringToMoreHumanReadableForm(newExample.RegionName)
 			Dim args As New CodeEvaluationEventArgs()
 			InitializeCodeEvaluationEventArgs(args, newExample.RegionName)
 			evaluator.ForceCompile(args)
@@ -196,6 +196,10 @@ Namespace Spreadsheet_Document_Api_Part_3
 			Dim fileName As String = "SampleDocument.xlsx"
 			workbook.SaveDocument(fileName, DocumentFormat.Xlsx)
 			Process.Start(fileName)
+		End Sub
+
+		Private Sub btnOpenExcel_Click_1(sender As Object, e As EventArgs) 
+
 		End Sub
 	End Class
 End Namespace

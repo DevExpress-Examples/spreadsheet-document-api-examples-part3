@@ -57,6 +57,12 @@ Namespace Spreadsheet_Document_Api_Part_3
 				'    text += "rn" + ce.ToString();
 				'}
 				'MessageBox.Show(text);
+
+				Dim Text As String = "Compile error: "
+				For Each ce As CompilerError In compile.Errors
+					Text &= "rn" & ce.ToString()
+				Next ce
+				MessageBox.Show(Text)
 				Return False
 			End If
 

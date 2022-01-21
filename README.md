@@ -3,32 +3,44 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T834004)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
+
+# Spreadsheet Document API – How to Process Excel Workbooks in Code (Part 3)
+
+The [DevExpress Spreadsheet Document API](https://docs.devexpress.com/OfficeFileAPI/14912/spreadsheet-document-api) is a non-visual library that allows you to generate, import, export, modify, and print Microsoft Excel workbooks in code. 
+
+> You need a license for the [DevExpress Office File API Subscription](https://www.devexpress.com/products/net/office-file-api/) or [DevExpress Universal Subscription](https://www.devexpress.com/subscriptions/universal.xml) to use this library in production code. 
+
+This example demonstrates how to use the Spreadsheet Document API to execute the following actions:
+
+- Embed arbitrary XML data (custom XML parts) in a spreadsheet document
+- Validate data in worksheet cells
+- Remove rows and columns that meet a specific condition
+
+The application form contains the list of supported operations and the editor that allows you to view and edit the source code for each operation. Select an operation, modify its code if necessary, and click **Open in Microsoft Excel** to open the resulting spreadsheet document in Microsoft Excel.
+
+If an error occurs during compilation or execution, the background color of the code editor changes to pink.
+
+![Spreadsheet Document API - List of Supported Operations](./images/spreadsheet-document-api-part-3.png)
+
 <!-- default file list -->
-*Files to look at*:
+
+## Files to Look At
 
 * [CustomXmlPartActions.cs](./CS/Spreadsheet_Document_Api_Part_3/CodeExamples/CustomXmlPartActions.cs) (VB: [CustomXmlPartActions.vb](./VB/Spreadsheet_Document_Api_Part_3/CodeExamples/CustomXmlPartActions.vb))
 * [DataValidationActions.cs](./CS/Spreadsheet_Document_Api_Part_3/CodeExamples/DataValidationActions.cs) (VB: [DataValidationActions.vb](./VB/Spreadsheet_Document_Api_Part_3/CodeExamples/DataValidationActions.vb))
 * [RowAndColumnActions.cs](./CS/Spreadsheet_Document_Api_Part_3/CodeExamples/RowAndColumnActions.cs) (VB: [RowAndColumnActions.vb](./VB/Spreadsheet_Document_Api_Part_3/CodeExamples/RowAndColumnActions.vb))
+
 <!-- default file list end -->
 
-# Spreadsheet API - Part 3
+## Documentation
 
-This example demonstrates how to use the <a href="https://documentation.devexpress.com/OfficeFileAPI/14912/Spreadsheet-Document-API">Spreadsheet Document API</a> to programmatically manage spreadsheet documents, without the need for Microsoft Excel to be installed.
+- [Custom XML parts](https://docs.devexpress.com/OfficeFileAPI/DevExpress.Spreadsheet.Workbook.CustomXmlParts)
+- [Validate Data in Spreadsheet Cells](https://docs.devexpress.com/OfficeFileAPI/401430/spreadsheet-document-api/data-validation)
+- [Remove Rows](https://docs.devexpress.com/OfficeFileAPI/DevExpress.Spreadsheet.RowCollection#remove-rows-that-meet-a-specific-condition)
+- [Remove Columns](https://docs.devexpress.com/OfficeFileAPI/DevExpress.Spreadsheet.ColumnCollection#remove-columns-that-meet-a-specific-condition)
 
-The application includes the <a href="https://documentation.devexpress.com/#WindowsForms/CustomDocument6975">RichEditControl</a> used to display and edit the code. The code modifies the spreadsheet document loaded in the <a href="https://documentation.devexpress.com/OfficeFileAPI/DevExpress.Spreadsheet.Workbook.class">Workbook</a> instance. To see the results, open the document in Microsoft Excel by clicking the button.
 
-You can modify the code and watch the result. If an error occurs during compilation or execution, the backcolor of the code window changes.
+## More Examples
 
-This sample introduces API properties and methods used to perform the following operations:
-- Apply data validation to control the type of data or the values that users enter into a cell
-- Remove rows and columns that meet the specified condition
-- Custom XML Parts examples
-
-For more information, review the <a href="https://documentation.devexpress.com/OfficeFileAPI/12074/Spreadsheet-Document-API/Examples"><u>Examples</u></a> section in the documentation.
-
-The<strong> Universal Subscription</strong> or an additional <strong>Office File API Subscription</strong> is required to use this example in production code. Please refer to the <a href="https://www.devexpress.com/Buy/NET/">DevExpress Subscription</a> page for pricing information.
-
-See also:<br/>
-<a href="https://github.com/DevExpress-Examples/spreadsheet-document-api-examples-e4339">Spreadsheet Document API - Part 1</a>
-
-<a href="https://github.com/DevExpress-Examples/spreadsheet-document-api-examples-part-2-t217615">Spreadsheet Document API - Part 2</a>
+- [Spreadsheet Document API - Part 1](https://github.com/DevExpress-Examples/spreadsheet-document-api-examples-part1)
+- [Spreadsheet Document API - Part 2](https://github.com/DevExpress-Examples/spreadsheet-document-api-examples-part2)

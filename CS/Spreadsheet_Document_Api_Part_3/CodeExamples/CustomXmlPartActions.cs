@@ -47,8 +47,13 @@ namespace SpreadsheetControl_API_Part03.CodeExamples
         static void ObtainCustomXmlPart(IWorkbook workbook)
         {
             #region #ObtainCustomXmlPart
+            // Load a document from a file.
             workbook.LoadDocument("Documents\\CustomXml.xlsx");
+
+            // Access a custom XML file stored in the document.
             XmlDocument xmlDoc = workbook.CustomXmlParts[0].CustomXmlPartDocument;
+
+            // Retrieve a hyperlink from the XML file and display it in the document.
             XmlNamespaceManager nsmgr = new XmlNamespaceManager(xmlDoc.NameTable);
             string xPathString = "//Fish[Category='Cod']/ScientificClassification/Reference";
             XmlNode xmlNode = xmlDoc.DocumentElement.SelectSingleNode(xPathString, nsmgr);
@@ -60,11 +65,18 @@ namespace SpreadsheetControl_API_Part03.CodeExamples
         static void ModifyCustomXmlPart(IWorkbook workbook)
         {
             #region #ModifyCustomXmlPart
+            // Load a document from a file.
             workbook.LoadDocument("Documents\\CustomXml.xlsx");
+
+            // Access a custom XML file stored in the document.
             XmlDocument xmlDoc = workbook.CustomXmlParts[1].CustomXmlPartDocument;
+            
+            // Retrieve XML nodes that match a specific expression.
             XmlNamespaceManager nsmgr = new XmlNamespaceManager(xmlDoc.NameTable);
             string xPathString = "//whitepaper/contact[firstname='Roger']/firstname";
             XmlNodeList xmlNodes = xmlDoc.DocumentElement.SelectNodes(xPathString, nsmgr);
+            
+            // Modify XML nodes and display them in the document.
             foreach (XmlNode node in xmlNodes) node.InnerText = "Stephen";
             workbook.SaveDocument("Documents\\CustomXmlRogerStephen.xlsx");
             workbook.Worksheets[0].Cells["A2"].Value = xmlDoc.FirstChild.FirstChild.FirstChild.InnerText;
