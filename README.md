@@ -29,6 +29,7 @@ If an error occurs during compilation or execution, the background color of the 
 * [CustomXmlPartActions.cs](./CS/Spreadsheet_Document_Api_Part_3/CodeExamples/CustomXmlPartActions.cs) (VB: [CustomXmlPartActions.vb](./VB/Spreadsheet_Document_Api_Part_3/CodeExamples/CustomXmlPartActions.vb))
 * [DataValidationActions.cs](./CS/Spreadsheet_Document_Api_Part_3/CodeExamples/DataValidationActions.cs) (VB: [DataValidationActions.vb](./VB/Spreadsheet_Document_Api_Part_3/CodeExamples/DataValidationActions.vb))
 * [RowAndColumnActions.cs](./CS/Spreadsheet_Document_Api_Part_3/CodeExamples/RowAndColumnActions.cs) (VB: [RowAndColumnActions.vb](./VB/Spreadsheet_Document_Api_Part_3/CodeExamples/RowAndColumnActions.vb))
+* [FormControlActions.cs](./CS/Spreadsheet_Document_Api_Part_3/CodeExamples/FormControlActions.cs) (VB: [FormControlActions.vb](./VB/Spreadsheet_Document_Api_Part_3/CodeExamples/FormControlActions.vb))
 
 <!-- default file list end -->
 
